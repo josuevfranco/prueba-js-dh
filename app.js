@@ -8,9 +8,7 @@
 */
 
 exports.leerTareas = function () {
-    /*
-        En esta función debes leer y retornar las tareas registradas.
-    */
+
 }
 
 exports.agregarTarea = function (tarea) {
