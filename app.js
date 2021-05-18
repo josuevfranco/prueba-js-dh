@@ -7,8 +7,14 @@
          )
 */
 
-exports.leerTareas = function () {
 
+const tareas = require('./tareas')
+const fs = require('fs');
+
+
+exports.leerTareas = function () {
+    const listado = fs.readFileSync(this.path, 'utf-8')
+    return JSON.parse(listado);    
 }
 
 exports.agregarTarea = function (tarea) {
